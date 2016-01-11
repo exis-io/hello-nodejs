@@ -1,0 +1,2 @@
+Base: exis-nodejs:r2
+Command: nodejs main.js
