@@ -1,15 +1,15 @@
 var riffle = require('jsriffle');
 
-riffle.SetFabric(process.env.WS_URL);
-riffle.SetLogLevelInfo();
+riffle.setFabric(process.env.WS_URL);
+riffle.setLogLevelInfo();
 
 var domain = riffle.Domain(process.env.DOMAIN);
 
 domain.onJoin = function() {
-    this.Register("echo", riffle.want(function(msg) {
+    this.register("echo", riffle.want(function(msg) {
         console.log("Echo: " + msg);
         return msg;
     }, String));
 }
 
-domain.Join()
+domain.join()
