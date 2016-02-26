@@ -1,4 +1,2 @@
-FROM exis/exis-nodejs:r3
-MAINTAINER Lance Hartung
-
+FROM exis/exis-nodejs
 CMD ["nodejs", "main.js"]

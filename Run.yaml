@@ -1,2 +1,2 @@
-Base: exis-nodejs:r3
+Base: exis-nodejs
 Command: nodejs main.js
